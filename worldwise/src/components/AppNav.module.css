@@ -1,0 +1,8 @@
+.nav {
+  background-color: rebeccapurple;
+}
+
+/* Make a global .test class */
+:global(.test) {
+  background-color: red;
+}
