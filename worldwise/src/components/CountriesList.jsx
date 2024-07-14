@@ -20,7 +20,7 @@ function CountriesList({ cities, isLoading }) {
   return (
     <ul className={styles.countryList}>
       {countries.map((country) => (
-        <CountryItem id={country} country={country} key={country.id} />
+        <CountryItem id={country} country={country} key={country.country} />
       ))}
     </ul>
   );
