@@ -37,39 +37,15 @@
       "id": "98443197"
     },
     {
-      "id": "b7e4",
-      "cityName": "Surat",
-      "country": "India",
-      "emoji": "🇮🇳",
-      "date": "2024-07-20T20:01:50.756Z",
-      "notes": "fff",
-      "position": {
-        "lat": "21.2100682457448",
-        "lng": "72.8312122821808"
-      }
-    },
-    {
-      "id": "8be4",
-      "cityName": "Strait of Gibraltar",
-      "country": "Morocco",
-      "emoji": "🇲🇦",
-      "date": "2024-07-20T20:07:20.239Z",
-      "notes": "",
-      "position": {
-        "lat": "35.97800618085566",
-        "lng": "-5.405273437500001"
-      }
-    },
-    {
-      "id": "56fa",
-      "cityName": "Puebla de Don Rodrigo",
+      "id": "2679",
+      "cityName": "Torlengua",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2024-07-20T20:09:06.630Z",
+      "date": "2024-07-21T21:08:13.459Z",
       "notes": "",
       "position": {
-        "lat": "39.06184913429154",
-        "lng": "-4.7900390625"
+        "lat": "41.439955752095074",
+        "lng": "-2.1093750000000004"
       }
     }
   ]
