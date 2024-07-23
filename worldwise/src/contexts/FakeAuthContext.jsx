@@ -17,7 +17,7 @@ const FAKE_USER = {
 function reducer(state, action) {
     switch (action.type) {
         case "login":
-            return { ...state, user: action.payload };
+            return { ...state, user: action.payload, isAuthenticated: true };
 
         case "logout":
             return { ...state, user: null, isAuthenticated: false };
@@ -49,6 +49,8 @@ function AuthProvider({children}) {
 function useAuth() {
     const context = useContext(AuthContext);
     if (context === undefined) throw new Error("AuthContext was use outside the AuthProvider");
+
+    return context;
 }
 
 export { AuthProvider, useAuth };
