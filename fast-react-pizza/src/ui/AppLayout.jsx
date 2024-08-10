@@ -5,7 +5,7 @@ import Loader from "./Loader";
 
 function AppLayout() {
   const navigation = useNavigation();
-  const isLoading = navigation.state === "loading";
+  const isLoading = navigation.state === "loading"; //idle, loading, submitting.
 
   return (
     <div className="layout">
