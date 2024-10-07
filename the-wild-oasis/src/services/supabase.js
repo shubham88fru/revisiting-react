@@ -5,3 +5,5 @@ const supabaseKey = //not dangerous to do this.
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 export default supabase;
+
+//https://wjgldbngaxfwacpqquyw.supabase.co
