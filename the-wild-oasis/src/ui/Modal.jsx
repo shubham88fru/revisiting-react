@@ -9,6 +9,7 @@ import {
 import { createPortal } from "react-dom";
 import { HiXMark } from "react-icons/hi2";
 import styled from "styled-components";
+import { useOutsideClick } from "../services/useOutsideClick";
 
 const StyledModal = styled.div`
   position: fixed;
@@ -81,26 +82,8 @@ function Open({ children, opens: opensWindowName }) {
 
 function Window({ children, name }) {
   const { openName, close } = useContext(ModalContext);
-  const ref = useRef();
 
-  useEffect(
-    function () {
-      function handleClick(e) {
-        //If the clicked element is not inside the ref.current (i.e. Window),
-        //close the modal.
-        if (ref.current && !ref.current.contains(e.target)) {
-          close();
-        }
-      }
-
-      document.addEventListener("click", handleClick, true);
-
-      return function () {
-        document.removeEventListener("click", handleClick, true);
-      };
-    },
-    [close]
-  );
+  const ref = useOutsideClick(close);
 
   if (name !== openName) return null;
   return createPortal(
