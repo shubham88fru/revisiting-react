@@ -3,7 +3,7 @@ export const metadata = {
 };
 
 function Page() {
-  return <div>Accounts Page</div>;
+  return <div>Welcome, Shubham</div>;
 }
 
 export default Page;
