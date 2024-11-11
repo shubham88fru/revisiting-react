@@ -3,7 +3,7 @@ import img1 from "@/public/about-1.jpg";
 import img2 from "@/public/about-2.jpg";
 import { getCabins } from "../_lib/data-service";
 
-export const revalidate = 60 * 24;
+export const revalidate = 86400; //seconds - one day.
 
 export const metadata = {
   title: "About",
